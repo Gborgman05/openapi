@@ -5,4 +5,11 @@ properties:
     type: array
     items:
       $ref: app_ingress_spec_rule.yml
+  custom_error_page_url:
+    type: string
+    description: |-
+      Optional HTTPS URL of a custom error page to display when the app is unreachable. The
+      page is shown in a full-viewport iframe. If omitted, the default platform error page
+      is used.
+    example: https://status.example.com/app-unavailable
 description: Specification for app ingress configurations.
